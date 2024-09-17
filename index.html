@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple School Management System</title>
+</head>
+<body>
+    <nav>
+        <div>
+            <h2>School Management System</h2>
+        </div>
+    </nav>
+
+    <main>
+        <div class="form-container"></div>
+        <h2>Add Student</h2>
+            <form id="add-student-form" method="post">
+                <input type="text" name="first_name" id="first_name" placeholder="First Name" required>
+                <input type="text" name="last_name" id="last_name" placeholder="Last Name" required>
+                <input type="text" name="email" id="email" placeholder="Email" required>
+                <input type="text" name="course" id="course" placeholder="Course" required>
+                <input type="text" name="reg_no" id="reg_no" placeholder="Reg No" required>
+                <button type="submit">Add</button>
+            </form>
+        </div>
+        <hr>
+        <div class="list container">
+            <h2>List of all containers</h2>
+            <table id="students-table" border="1">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Course</th>
+                        <th>Registration No</th>
+                    </tr>
+                </thead>
+                <tbody id="students-body">
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

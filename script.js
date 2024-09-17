@@ -30,7 +30,7 @@ document.getElementById('add-student-form').addEventListener('submit', async fun
 })
 
 async function fetchStudents() {
-    const response = await fetch('http://localhost:3002/students/all-students'); // Adjust the URL to match your backend
+    const response = await fetch('http://localhost:3002/students/all-students'); 
     const students = await response.json();
     const tableBody = document.getElementById('students-body');
     tableBody.innerHTML = '';
